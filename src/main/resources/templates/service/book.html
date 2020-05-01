@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">    <!-- a -->
+<head>
+  <meta charset="UTF-8"/>
+  <title>書籍在庫</title>
+  <style type="text/css">
+    .list th {
+      background-color: #cccccc;
+      padding: 5px;
+    }
+    .list td {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <table class="list">
+    <tr>
+      <th>ID</th>
+      <th>書籍名</th>
+      <th>値段</th>
+    </tr>
+    <tr th:each="books:${books}">   
+      <td th:text="${books.id}"></td>    
+      <td th:text="${books.name}"></td>    
+      <td th:text="${books.price}"></td>   
+    </tr>
+  </table>
+</body>
+</html>
