@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org/">    <!-- a -->
+<html lang="ja">
 <head>
   <meta charset="UTF-8"/>
-  <title>書籍在庫</title>
-  <style type="text/css">
-    .list th {
-      background-color: #cccccc;
-      padding: 5px;
-    }
-    .list td {
-      padding: 5px;
-    }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>在庫一覧</title>
+  <link th:href="@{/css/admin.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
   <table class="list">
+  
+  <h1>書籍管理サイト</h1>
+  
+  <h2>在庫一覧</h2>
+ 
+  <p>以下に書籍の在庫情報を表示します。</p>
+  
     <tr>
       <th>ID</th>
       <th>書籍名</th>
-      <th>値段</th>
+      <th>値段(&yen;)</th>
     </tr>
     <tr th:each="books:${books}">   
       <td th:text="${books.id}"></td>    

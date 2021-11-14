@@ -1,0 +1,20 @@
+    .list th {
+      background-color: #cccccc;
+      padding: 30px;
+    }
+    .list td {
+      padding: 30px;
+    }
+    table{
+      border-collapse: collapse;
+      border: 3px black solid;
+      margin: auto;
+    }
+    th,td {
+      padding: 0.5em;
+      border: 1px solid black;
+    }
+    body{
+      width: 100%;
+      text-align: center;
+    }
